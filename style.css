@@ -1,0 +1,153 @@
+
+/* Definition de police personnalise*/
+
+@font-face
+{
+	font-family: 'Roboto', sans-serif;
+}
+
+
+/* Element principal de la page*/
+#bloc-page
+{
+	width: 100%;
+}
+body
+{
+	font-family: 'Roboto', sans-serif;
+}
+
+/* Header + logo www */
+header
+{
+	height: 120px;
+	background-color: white;
+	background: url("logo/circuitback.png")fixed no-repeat top right; 
+}
+
+.logo 			
+{
+	padding: 25px 0 0 40px;
+}
+
+/* configuraton balise text*/
+h1
+{
+	font-size: 60px;
+	padding: 0 8px 0 8px; 
+}
+
+h2
+{
+	font-size: 30px; 						
+	padding: 0 8px 0 8px;	
+}
+
+p, li 
+{
+	max-width: 610px; 
+	font-size: 20px;
+	padding: 0 8px 0 8px;
+	text-align: left;
+}
+
+mark
+{
+	background-color: white;
+	color: black;
+}
+/* Section one */
+
+#conteneur_one
+{
+	min-height: 400px;
+	background-color:  #3498db;
+	color: white;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+
+
+/* section two */
+#conteneur_two
+{
+	min-height: 400px;
+	background-color:  #cfcfcf;
+	color:  #3498db;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	
+}
+
+/* footer */
+#conteneur_three
+{
+	min-height: 400px;
+	background-color:  #3498db ;
+	color: white;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.logo_three
+{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+/* Media Queries pour appareil mobile*/
+
+@media all and (max-width: 1024px)
+{
+	.logo
+	{
+		text-align:center;
+	}
+
+	#bloc_page
+	{
+		width: auto;
+	}
+	
+	header 
+	{
+		background: none;	
+	}
+
+	h1, h2, p
+	{
+		width: auto;
+		
+	}
+
+	h1
+	{
+		font-size: 45px;
+	}
+
+	h2
+	{
+		font-size: 25px;
+	}
+
+	p, li
+	{
+		font-size: 18px;
+	}
+
+	.logo_one, .logo_two
+	{
+		display: none;
+	}
+
+	#conteneur_three
+	{
+		flex-direction: column;
+	}	
+}
+
